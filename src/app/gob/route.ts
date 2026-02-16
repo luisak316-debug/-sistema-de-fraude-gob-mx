@@ -21,8 +21,10 @@ const html = `<!DOCTYPE html>
   <meta property="og:description" content="El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso.">
   <meta property="og:url" content="${gobUrl}">
   <meta property="og:image" content="${siteUrl}/og.png">
+  <meta property="og:image:secure_url" content="${siteUrl}/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:locale" content="es_MX">
   <meta property="fb:app_id" content="${fbAppId}">
   <meta name="twitter:card" content="summary_large_image">
