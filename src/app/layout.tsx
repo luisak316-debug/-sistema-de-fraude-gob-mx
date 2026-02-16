@@ -58,6 +58,7 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="es_MX" />
+        <meta property="fb:app_id" content={process.env.NEXT_PUBLIC_FB_APP_ID || "0"} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Portal Gob MX" />
         <meta name="twitter:description" content="El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso." />
