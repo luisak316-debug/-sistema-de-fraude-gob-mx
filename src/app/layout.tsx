@@ -52,8 +52,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="es" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
+        {/* Open Graph para WhatsApp y redes: URL absolutas */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Portal Gob MX" />
+        <meta property="og:title" content="Portal Gob MX" />
+        <meta property="og:description" content="El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso." />
+        <meta property="og:url" content={siteUrl} />
+        {/* og:image lo sirve Next.js desde /opengraph-image (mismo dominio = mejor en WhatsApp) */}
+        <meta property="og:locale" content="es_MX" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Portal Gob MX" />
+        <meta name="twitter:description" content="El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso." />
         <Script
           crossOrigin="anonymous"
           src="//unpkg.com/same-runtime/dist/index.global.js"
