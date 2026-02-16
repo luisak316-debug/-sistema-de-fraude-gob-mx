@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso.",
     url: siteUrl,
     siteName: "Portal Gob MX",
-    images: [{ url: `${siteUrl}/api/og`, width: 1200, height: 630, alt: "Portal Gob MX" }],
+    images: [{ url: `${siteUrl}/og.png`, width: 1200, height: 630, alt: "Portal Gob MX" }],
     locale: "es_MX",
     type: "website",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Portal Gob MX",
     description: "El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso.",
-    images: [`${siteUrl}/api/og`],
+    images: [`${siteUrl}/og.png`],
   },
 };
 
@@ -54,14 +54,14 @@ export default function RootLayout({
         <meta property="og:title" content="Portal Gob MX" />
         <meta property="og:description" content="El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso." />
         <meta property="og:url" content={siteUrl} />
-        <meta property="og:image" content={`${siteUrl}/api/og`} />
+        <meta property="og:image" content={`${siteUrl}/og.png`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="es_MX" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Portal Gob MX" />
         <meta name="twitter:description" content="El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso." />
-        <meta name="twitter:image" content={`${siteUrl}/api/og`} />
+        <meta name="twitter:image" content={`${siteUrl}/og.png`} />
         <Script
           crossOrigin="anonymous"
           src="//unpkg.com/same-runtime/dist/index.global.js"
