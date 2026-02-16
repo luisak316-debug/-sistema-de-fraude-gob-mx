@@ -14,11 +14,35 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://portal-gob-mx.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Portal Gob MX",
   description: "El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso.",
   icons: {
     icon: "https://ext.same-assets.com/2098432521/920971351.ico",
+  },
+  openGraph: {
+    title: "Portal Gob MX",
+    description: "El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso.",
+    url: siteUrl,
+    siteName: "Portal Gob MX",
+    images: [
+      {
+        url: "https://ext.same-assets.com/2098432521/3519242953.png",
+        width: 400,
+        height: 120,
+        alt: "Gobierno de México",
+      },
+    ],
+    locale: "es_MX",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portal Gob MX",
+    description: "El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso.",
   },
 };
 
