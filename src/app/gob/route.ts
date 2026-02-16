@@ -21,6 +21,7 @@ const html = `<!DOCTYPE html>
   <meta name="twitter:image" content="${siteUrl}/og.png">
   <meta http-equiv="refresh" content="0;url=${siteUrl}">
   <link rel="canonical" href="${siteUrl}">
+  <link rel="icon" href="https://ext.same-assets.com/2098432521/920971351.ico" type="image/x-icon">
 </head>
 <body>
   <p>Redirigiendo a Portal Gob MX...</p>
