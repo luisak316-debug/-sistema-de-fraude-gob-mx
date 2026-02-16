@@ -1,7 +1,7 @@
 const siteUrl = "https://portal-gob-mx.vercel.app";
 const gobUrl = `${siteUrl}/gob`;
-/** ID de app de Facebook (obligatorio para el depurador). Crear en https://developers.facebook.com/apps/ y poner en Vercel como NEXT_PUBLIC_FB_APP_ID */
-const fbAppId = process.env.NEXT_PUBLIC_FB_APP_ID || "0";
+/** Solo incluir fb:app_id si tienes un App ID real (evita advertencia "Identificador no válido"). Crear en https://developers.facebook.com/apps/ */
+const fbAppId = process.env.NEXT_PUBLIC_FB_APP_ID || "";
 
 /**
  * Siempre devolvemos el mismo HTML con TODOS los meta tags.
@@ -26,7 +26,7 @@ const html = `<!DOCTYPE html>
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/png">
   <meta property="og:locale" content="es_MX">
-  <meta property="fb:app_id" content="${fbAppId}">
+  ${fbAppId ? `<meta property="fb:app_id" content="${fbAppId}">` : ""}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Portal Gob MX">
   <meta name="twitter:description" content="El portal gob.mx permite consultar el listado de trámites y programas sociales federales disponibles y a los cuales tienes acceso.">
