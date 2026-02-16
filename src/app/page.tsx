@@ -98,8 +98,6 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             <a href="https://www.gob.mx/index.xhtml" className="hover:underline text-base font-medium">Trámites</a>
             <a href="https://www.gob.mx/gobierno" className="hover:underline text-base font-medium">Gobierno</a>
-            <a href="/verificar-folios" className="hover:underline text-base font-medium">Verificar folios</a>
-            <a href="/admin" className="hover:underline text-base font-medium font-semibold">Admin (registro de casos)</a>
             <a href="https://www.gob.mx" className="hover:underline text-base font-medium">Iniciar sesión</a>
             <a href="https://www.gob.mx" className="hover:opacity-80">
               <img src="https://ext.same-assets.com/2098432521/1174755020.svg" alt="Llave MX" className="h-7 brightness-0 invert" />
@@ -237,12 +235,6 @@ export default function Home() {
           {/* Quick Access Buttons - Horizontal scroll on mobile */}
           <div className="mt-8 overflow-x-auto scrollbar-hide">
             <div className="flex gap-3 md:flex-wrap md:justify-center min-w-max md:min-w-0 px-0 md:px-4">
-              <Button asChild className="bg-[#6B1839] hover:bg-[#5a1230] border-2 border-white rounded-full px-5 py-2.5 text-sm md:text-base font-semibold whitespace-nowrap text-white shadow-sm">
-                <a href="/admin">Admin (registro de casos)</a>
-              </Button>
-              <Button asChild className="bg-[#6B1839] hover:bg-[#5a1230] border-2 border-white rounded-full px-5 py-2.5 text-sm md:text-base font-semibold whitespace-nowrap text-white shadow-sm">
-                <a href="/verificar-folios">Verificar folios</a>
-              </Button>
               <Button asChild className="bg-[#9b2247] hover:bg-[#7a1b38] border-2 border-white rounded-full px-5 py-2.5 text-sm md:text-base font-semibold whitespace-nowrap text-white shadow-sm">
                 <a href="https://www.gob.mx/cedulaprofesional" target="_blank" rel="noopener noreferrer">Cédula profesional</a>
               </Button>
